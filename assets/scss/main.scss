@@ -44,62 +44,35 @@ h1 {
   box-sizing: border-box;
 }
 
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-.wrapper {
-   display: flex;
-  //  flex-direction: row;
-  //  flex-wrap: wrap-reverse;
-   flex-flow: row wrap; // shorthand for flex-direction and flex-wrap combined 
-   justify-content: space-between; // horizontal
-   background: black;
-   height: 700px;
-   align-items: center; // vertical
-  //  align-content: stretch;
-}
-.box {
-  width: 100px;
-  height: 100px;
+.header {
   background: red;
-  border: 1px solid black;
-  align-self: flex-start;
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      display: inline-block;
+      padding: 10px 15px;
+      list-style: none;
+    }
+
+  }
+
 }
 
-.box2 {
-  // flex: 20; // flex-grow
-  // flex-grow: 20;
-  // flex-basis: 150px;
-  width: 400px;
-  height: 200px;
-  background: blue;
-  border: 1px solid black;
-  align-self: baseline;
+.submenu {
+  &.blue {
+    background: blue;
+  }
+  &.nav li{
+     list-style: none;
+  }
+  &.sky ul{
+    padding: 0;
+  }
+  &:hover {
+    background: yellow;
+  }
 }
 
-.box3 {
-  width: 250px;
-  height: 300px;
-  background: yellow;
-  border: 1px solid black;
-  align-self: flex-end;
-}
-.box4 {
-  width: 100px;
-  // height: 100px;
-  background: red;
-  border: 1px solid black;
-  align-self: stretch;
-}
-.box5 {
-  // flex-grow: 20;
-  // flex-shrink: 10;
-  // flex-basis: 200px;
-  width: 100px;
-  height: 100px;
-  background: red;
-  border: 1px solid black;
-  align-self: auto; // follows wrapper's container align-items property
-}
