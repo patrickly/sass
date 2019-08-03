@@ -113,27 +113,26 @@ aside {
   }
 }
 
-.btn.primary {
+.btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+  display: inline-block;
+}
+
+.primary {
+  @extend .btn;
   background: blue;
-  padding: 10px 15px;
-  border-radius: 5px;
-  margin: 10px 0;
 }
-.btn.success {
+.success {
+  @extend .btn;
   background: green;
-  padding: 10px 15px;
-  border-radius: 5px;
-  margin: 10px 0;
 }
-.btn.danger {
+.danger {
+  @extend .btn;
   background: red;
-  padding: 10px 15px;
-  border-radius: 5px;
-  margin: 10px 0;
 }
-.btn.warning {
+.warning {
+  @extend .btn;
   background: yellow;
-  padding: 10px 15px;
-  border-radius: 5px;
-  margin: 10px 0;
 }
