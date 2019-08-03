@@ -47,6 +47,9 @@ h1 {
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower|Roboto&display=swap');
 $mainFont: 'Indie Flower', sans-serif;
 $secFont: 'Roboto', cursive;
+$liPadding: 10px 15px;
+$liDisplay: inline-block;
+$marginNum: 70;
 
 .header {
   background: red;
@@ -57,8 +60,8 @@ $secFont: 'Roboto', cursive;
 
     li {
       font-family: $mainFont;
-      display: inline-block;
-      padding: 10px 15px;
+      display: $liDisplay;
+      padding: $liPadding;
       list-style: none;
     }
 
@@ -73,7 +76,10 @@ $secFont: 'Roboto', cursive;
   &.nav li{
     font-family: $mainFont;
      list-style: none;
-  }
+     padding: $liPadding;
+     display: $liDisplay;
+     margin-bottom: $marginNum + px;
+    }
   &.sky ul{
     padding: 0;
   }
