@@ -73,6 +73,11 @@ $marginNum: 70;
 .container {
   width: 50 * 15 + px;
   margin: 0 auto;
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
 }
 article{
   width: 1000px / 1200px * 100%;
@@ -108,3 +113,27 @@ aside {
   }
 }
 
+.btn.primary {
+  background: blue;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.btn.success {
+  background: green;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.btn.danger {
+  background: red;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+.btn.warning {
+  background: yellow;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
