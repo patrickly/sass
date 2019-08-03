@@ -68,6 +68,16 @@ $marginNum: 70;
   }
 
 }
+article{
+  width: 1000px / 1200px * 100%;
+}
+aside {
+  width: 200px / 1200px * 100%;
+   
+  img {
+    width: 100%;
+  }
+}
 
 .submenu {
   &.blue {
