@@ -54,85 +54,13 @@ $marginNum: 70;
 
 
 .header {
-  background: red;
-
-  ul {
-    padding: 0;
-    margin: 0;
-
-    li {
-      font-family: $mainFont;
-      display: $liDisplay;
-      padding: $liPadding;
-      list-style: none;
-    }
-
-  }
-
-}
-.container {
-  width: 50 * 15 + px;
-  margin: 0 auto;
-  &:after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-}
-article{
-  width: 1000px / 1200px * 100%;
-  display: inline-block;
-  float: left;
-}
-aside {
-  width: 200px / 1200px * 100%;
-  display: inline-block;
-  padding: 20px / 1200px * 100%;
-  background: red;
-  img {
-    width: 100%;
-  }
-}
-
-.submenu {
-  &.blue {
-    background: blue;
-  }
-  &.nav li{
-    font-family: $mainFont;
-     list-style: none;
-     padding: $liPadding;
-     display: $liDisplay;
-     margin-bottom: $marginNum + px;
-    }
-  &.sky ul{
-    padding: 0;
-  }
-  &:hover {
-    background: yellow;
-  }
-}
-
-.btn {
-  padding: 10px 15px;
-  border-radius: 5px;
-  margin: 10px 0;
-  display: inline-block;
-}
-
-.primary {
-  @extend .btn;
-  background: blue;
-}
-.success {
-  @extend .btn;
-  background: green;
-}
-.danger {
-  @extend .btn;
-  background: red;
-}
-.warning {
-  @extend .btn;
-  background: yellow;
+  background: black;
+  padding: 20px;
+ ul {
+   background: yellow;
+   padding: 20px;
+   li {
+    list-style: none;
+   }
+ }
 }
